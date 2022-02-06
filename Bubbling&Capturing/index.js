@@ -31,20 +31,20 @@
 
 
 //this is the example of trickling and capturing
-// document.querySelector("#grandparent")
-//     .addEventListener('click', ()=>{
-//         console.log("grandparent clicked");
-// },true);
+document.querySelector("#grandparent")
+    .addEventListener('click', ()=>{
+        console.log("grandparent clicked");
+},true);
 
-// document.querySelector("#parent")
-//     .addEventListener('click', ()=>{
-//         console.log("parent clicked");
-// },true);
+document.querySelector("#parent")
+    .addEventListener('click', ()=>{
+        console.log("parent clicked");
+},true);
 
-// document.querySelector("#child")
-//     .addEventListener('click', ()=>{
-//         console.log("child clicked");
-// },true);
+document.querySelector("#child")
+    .addEventListener('click', ()=>{
+        console.log("child clicked");
+},true);
 
 /*
 document.querySelector("#grandparent")
@@ -84,20 +84,20 @@ document.querySelector("#child")
 
 //stop propagation i.e it will stop all the propogation i.e bubbling and capturing
 
-document.querySelector("#grandparent")
-    .addEventListener('click', (e)=>{
-        e.stopPropagation();
-        console.log("grandparent clicked");
-},true);
+// document.querySelector("#grandparent")
+//     .addEventListener('click', (e)=>{
+//         e.stopPropagation();
+//         console.log("grandparent clicked");
+// },true);
 
-document.querySelector("#parent")
-    .addEventListener('click', (e)=>{
-        // e.stopPropagation();
-        console.log("parent clicked");
-},true);
+// document.querySelector("#parent")
+//     .addEventListener('click', (e)=>{
+//         // e.stopPropagation();
+//         console.log("parent clicked");
+// },true);
 
-document.querySelector("#child")
-    .addEventListener('click', (e)=>{
-        // e.stopPropagation();
-        console.log("child clicked");
-},true);
+// document.querySelector("#child")
+//     .addEventListener('click', (e)=>{
+//         // e.stopPropagation();
+//         console.log("child clicked");
+// },true);
