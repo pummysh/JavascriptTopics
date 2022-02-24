@@ -26,3 +26,5 @@ let multiplyNew=function(x){
 
 let n=multiplyNew(2);
 n(8)
+
+

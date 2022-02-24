@@ -24,35 +24,72 @@ name.printFullName.call(name2);
 
 //Another way 
 
-let name={
-    firstname: 'John',
-    lastname: 'william',
-};
+// let name={
+//     firstname: 'John',
+//     lastname: 'william',
+// };
 
-let printFullName=function(hometown){
-    console.log(this.firstname + " "+ this.lastname+" from "+hometown);
+// let printFullName=function(hometown){
+//     console.log(this.firstname + " "+ this.lastname+" from "+hometown);
+// }
+
+// printFullName.call(name,"London");
+
+// let name2={
+//     firstname: 'Pummy',
+//     lastname: 'Sharma',
+// }
+
+// printFullName.call(name2,"bhiwadi");
+// //call pass the arguments separeted with commas 
+
+// printFullName.apply(name2,["bhiwadi"]);
+// //apply pass the arguments in form of array
+
+// //Bind return the function that we can use later
+
+// let printName=printFullName.bind(name2,"Alwar");
+// printName();
+
+
+
+// let friends={
+//     chill:"yes",
+//     masti:"yes",
+//     siyapa:function(q){
+//         console.log(this.chill +" "+ this.masti );
+//     }
+// }
+
+// let study={
+//     chill:"no",
+//     masti:"no",
+// }
+
+// // friends.siyapa.call(study);
+
+// // friends.siyapa.apply(study)
+
+// let ans=friends.siyapa.bind(study)
+// ans();
+
+
+function contructor(a,b){
+    this.name=a,
+    this.age=b,
+    this.x=function(){
+        console.log(this.name);
+    }
 }
 
-printFullName.call(name,"London");
+let ans=new contructor("Pummy",20);
 
-let name2={
-    firstname: 'Pummy',
-    lastname: 'Sharma',
+ans.x();
+
+let p={
+    name:"Meera"
 }
 
-printFullName.call(name2,"bhiwadi");
-//call pass the arguments separeted with commas 
-
-printFullName.apply(name2,["bhiwadi"]);
-//apply pass the arguments in form of array
-
-//Bind return the function that we can use later
-
-let printName=printFullName.bind(name2,"Alwar");
-printName();
-
-
-
-
-
+ans.x.call(p);
+ans.x.apply(p);
 
