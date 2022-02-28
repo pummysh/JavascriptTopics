@@ -1,26 +1,25 @@
-/*
 
-let name={
-    firstname: 'John',
-    lastname: 'william',
-    printFullName: function(){
-        console.log(this.firstname + " "+ this.lastname);
-    }
-};
+// let name={
+//     firstname: 'John',
+//     lastname: 'william',
+//     printFullName: function(){
+//         console.log(this.firstname + " "+ this.lastname);
+//     }
+// };
 
-name.printFullName();
+// name.printFullName();
 
-let name2={
-    firstname: 'Pummy',
-    lastname: 'Sharma',
-}
+// let name2={
+//     firstname: 'Pummy',
+//     lastname: 'Sharma',
+// }
 
 //function borrowing
 
-name.printFullName.call(name2);
+// name.printFullName.call(name2);
 //here the argument of call is the this parameter that shoud it point to
 
-*/
+
 
 //Another way 
 
@@ -74,22 +73,21 @@ name.printFullName.call(name2);
 // ans();
 
 
-function contructor(a,b){
-    this.name=a,
-    this.age=b,
-    this.x=function(){
-        console.log(this.name);
-    }
-}
+// function contructor(a,b){
+//     this.name=a,
+//     this.age=b,
+//     this.x=function(){
+//         console.log(this.name);
+//     }
+// }
 
-let ans=new contructor("Pummy",20);
+// let ans=new contructor("Pummy",20);
+// ans.x();
 
-ans.x();
+// let p={
+//     name:"Meera"
+// }
 
-let p={
-    name:"Meera"
-}
-
-ans.x.call(p);
-ans.x.apply(p);
+// ans.x.call(p);
+// ans.x.apply(p);
 

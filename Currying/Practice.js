@@ -2,7 +2,7 @@
 //     return a+b+c+d;
 // }
 
-// // console.log(normal(1,2,3,4));
+// console.log(normal(1,2,3,4));
 
 // const p=(a)=>q=(b)=>r=(c)=>s=(d)=>a+b+c+d;
 
@@ -19,10 +19,10 @@
 
 // console.log(x(1)(2)(3));
 
-function add(a,b,c){
-    console.log(a+b+c);
-}
+// function add(a,b,c){
+//     console.log(a+b+c);
+// }
 
 
-let p=add.bind(this,3);
-(p(7,2));
+// let p=add.bind(this,3);
+// (p(7,2));

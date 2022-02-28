@@ -1,12 +1,13 @@
 //constructor function is like a blue print for creating multiple objects of the same type
 
-// function Create(name,k){
-//     this.name=name;
-//     this.degree=k;
-// }
+function Create(name,k){
+    this.name=name;
+    this.degree=k;
+}
 
-// const obj=new Create("Pummy","graduate");
-// console.log(obj);
+const obj=new Create("Pummy","graduate");
+obj.number=25
+console.log(obj);
 
 //new ={}  and then return this;
 
